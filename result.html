@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Added</title>
+</head>
+<body>
+    <h1>Friend Added Successfully!</h1>
+    <p th:text="'You have successfully added a new friend: ' + ${friend.firstName} + ' ' + ${friend.lastName} "></p>
+    
+    <a th:href="@{/addfriend}">Add another friend</a>
+</body>
+</html>
